@@ -1,13 +1,16 @@
 
       <div class="sign-in-container">
+        <app-dynamic-img></app-dynamic-img>
          <h2 >Sign In</h2>
          <p>Welcome back ! , Start generating delecios healthy food</p> 
-         <form> 
+         <form (ngSubmit)="onSubmit()"> 
           <label for="username">Username:</label> 
           <input type="text" id="username" name="username" required> 
           <label for="password">Password:</label> 
           <input type="password" id="password" name="password" required> 
-          <button type="submit">Sign In</button> 
+          <button type="submit" (click)="onSubmit()">Sign In</button> 
         </form> 
+        <p>Don't have an account? <a routerLink='/app-sign-up' routerLinkActive="active">Sign Up</a></p>  <!-- زر التنقل من Sign In ل Sign Up -->
       </div>
+      
       

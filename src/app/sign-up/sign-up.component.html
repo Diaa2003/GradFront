@@ -1,0 +1,23 @@
+<div class="sign-up-container">
+    <h2>Sign Up</h2>
+    <p>Create an account to start generating delicious healthy food!</p>
+    <form (ngSubmit)="onSubmit()">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="repeat-password">Repeat Password:</label>
+        <input type="password" id="repeat-password" name="repeat-password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a routerLink="/sign-in">Sign In</a></p>  <!-- زر التنقل من Sign Up ل Sign In -->
+</div>
